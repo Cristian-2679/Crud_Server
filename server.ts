@@ -15,7 +15,6 @@ dotenv.config({path: ".env"});
 const connectionString = process.env.connectionStringAtlas;
 const DB_NAME = process.env.dbName;
 const PORT = process.env.PORT;
-console.log(connectionString);
 
 //la callback di create server viene eseguita ad ogni richiesta giunta dal client
 http.createServer(app).listen(PORT, () => {
